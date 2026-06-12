@@ -1,0 +1,208 @@
+Build a full-stack AI-powered Trading Web App with the following complete specifications:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 APP NAME: TradeMind AI — Zero to Hero Trading Platform
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🖥️ TECH STACK
+- Frontend: React.js + Tailwind CSS
+- Charts: TradingView Lightweight Charts / Recharts
+- AI: Integrated Claude/GPT API for trade analysis
+- Data: Yahoo Finance API / Alpha Vantage (free tier)
+- YouTube: YouTube Data API v3 (free)
+- State: Zustand or Redux
+- Backend (optional): Node.js + Express
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎨 UI DESIGN THEME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Design a DARK, NEON, CYBERPUNK trading terminal aesthetic:
+- Background: Deep space black (#0A0A0F) with subtle grid lines
+- Primary Neon: Electric Cyan (#00F5FF)
+- Secondary Neon: Neon Green (#39FF14) for profit/buy
+- Danger/Sell: Hot Pink/Red (#FF2D55)
+- Gold Accent: (#FFD700) for premium signals
+- Cards: Glassmorphism style — semi-transparent dark glass with neon borders
+- Fonts: "Space Grotesk" for headings, "JetBrains Mono" for data/numbers
+- Animated glowing borders on active cards
+- Particle/starfield animated background (subtle)
+- Smooth hover micro-animations on all interactive elements
+- Mobile responsive with bottom navigation bar on mobile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 SECTION 1 — LIVE DASHBOARD (Home Page)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Top Navbar: Logo + Market Status (OPEN/CLOSED badge) + Clock (live)
+- Market Overview Bar: 
+  * NIFTY 50, SENSEX, BANK NIFTY live prices + % change
+  * Color: Green if up, Red if down, with animated ticker
+- 4 Quick Stat Cards (glassmorphism):
+  * Today's Best Setup | AI Confidence % | Signals Generated | Active Trades
+- Live Price Chart (TradingView widget or Recharts):
+  * Candlestick chart with Volume bars below
+  * Toggles: 1M / 5M / 15M / 1H / 1D timeframes
+  * Overlay: EMA 9, EMA 21, VWAP
+- Recent AI Signals Feed (scrollable):
+  * Stock Name | Entry | SL | Target | AI Confidence | Time | BUY/SELL badge
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 SECTION 2 — AI TRADING BOT (Core Feature)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Build an AI Bot Panel with:
+
+A) DAILY SETUP GENERATOR
+- Button: "Generate Today's Setups" 
+- AI analyzes top 20 stocks and outputs:
+  * Stock | Pattern Detected | Entry Zone | Stop Loss | Target 1 | Target 2 | Risk:Reward | Confidence %
+- Display as beautiful cards with neon glow
+- Export as PDF/CSV button
+
+B) AI CHAT ASSISTANT (Bottom-right floating button)
+- User can ask: "Is RELIANCE good to buy today?"
+- AI responds with: technical analysis, support/resistance, volume analysis, recommendation
+- Chat history saved in session
+- Pre-built quick prompts: "Best setups today" | "Explain RSI" | "What is breakout trading?"
+
+C) SIGNAL SCANNER
+- Scans for: Breakouts | RSI Oversold/Overbought | MACD Crossover | Volume Spikes
+- Filters: Market Cap | Sector | Price Range
+- Auto-refresh every 5 minutes with a countdown timer shown
+- Results table with color-coded rows
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📈 SECTION 3 — ADVANCED CHARTING TOOLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Full-screen TradingView Embedded Widget
+- Technical Indicators Panel (toggleable):
+  * RSI | MACD | Bollinger Bands | Stochastic | ATR | OBV | Supertrend
+- Drawing Tools: Trendlines, Fibonacci, Support/Resistance zones
+- Multi-chart view (2x2 grid)
+- Watchlist: Add up to 20 stocks, with mini sparkline charts
+- Alert System: Set price alerts (shown as browser notifications)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 SECTION 4 — LEARNING HUB (0 to Hero)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A) YOUTUBE VIDEO LIBRARY
+- Fetch free YouTube videos using YouTube Data API
+- Categories (tabs): Basics | Technical Analysis | Options | Futures | Psychology | Risk Management
+- Search queries to use:
+  * "stock market basics for beginners hindi"
+  * "technical analysis course free"
+  * "candlestick patterns explained"
+  * "options trading zero to hero"
+  * "trading psychology"
+- Display as Netflix-style cards with thumbnail, title, channel, duration
+- Click opens video in modal/popup (embedded YouTube player)
+- Progress tracker: Mark as watched
+
+B) CONCEPT GLOSSARY
+- Searchable glossary of 50+ trading terms
+- Each term: Definition + Example + Related indicator
+
+C) QUIZZES
+- After each learning section, a 5-question MCQ quiz
+- Score tracker, badges for completion
+- Topics: Candlesticks, Chart Patterns, Risk Management
+
+D) ROADMAP (Visual)
+- Interactive learning path: Beginner → Intermediate → Advanced
+- Progress bar showing % completion
+- Locked/unlocked modules
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📓 SECTION 5 — TRADE JOURNAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Add Trade form: Stock | Date | Entry | Exit | Quantity | P&L | Notes | Emotion tag
+- Auto P&L calculator
+- Journal Table: sortable, filterable
+- Analytics Charts:
+  * Monthly P&L bar chart
+  * Win Rate pie chart
+  * Best performing stocks
+  * Most common mistakes (from notes AI analysis)
+- Export: CSV / PDF report
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧮 SECTION 6 — CALCULATORS & TOOLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Include these free utility tools:
+
+1. Position Size Calculator
+   - Input: Capital, Risk %, Entry, Stop Loss → Output: Quantity + Max Loss
+
+2. Risk:Reward Calculator
+   - Input: Entry, SL, Target → Output: R:R ratio, % profit/loss
+
+3. Brokerage Calculator
+   - Intraday | Delivery | F&O segments
+   - Charges: Brokerage + STT + Exchange + GST + Stamp = Total Cost
+
+4. F&O Lot Size Reference Table
+   - All major stocks + Index contracts
+
+5. Options Payoff Visualizer (basic)
+   - Buy Call / Buy Put / Covered Call payoff diagram
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📰 SECTION 7 — NEWS & SENTIMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Fetch latest market news via NewsAPI (free tier)
+- AI Sentiment Score per news item: Bullish 🟢 / Bearish 🔴 / Neutral 🟡
+- Filter by sector: Banking | IT | Pharma | Auto | Energy
+- Economic Calendar: Upcoming events (RBI policy, earnings dates)
+- Fear & Greed Index widget (embed from CNN or custom)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👤 SECTION 8 — USER PROFILE & SETTINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Profile: Name, Trading style (Scalper/Swing/Investor), Experience level
+- Stats: Total trades logged, Win rate, Best streak, Total P&L
+- Badges/Achievements system (gamification)
+- Settings: Theme toggle (can also offer light mode), Notification preferences
+- Leaderboard (mock/demo): See top traders of the week
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 ADDITIONAL REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Sidebar navigation (collapsible on mobile)
+- Loading skeletons for all data-fetching areas
+- Toast notifications for: new signal, alert triggered, trade saved
+- All data that can't be fetched live should use realistic mock/demo data
+- PWA ready (installable on phone)
+- Smooth page transitions (Framer Motion)
+- Easter egg: Konami code triggers a "Bull Run Mode" with golden rain animation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 NAVIGATION STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sidebar / Bottom Nav items:
+🏠 Dashboard
+🤖 AI Bot
+📊 Charts
+📚 Learn (0→Hero)
+📓 Journal
+🧮 Tools
+📰 News
+👤 Profile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ IMPORTANT NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Use ONLY free APIs (Yahoo Finance, Alpha Vantage free tier, YouTube Data API, NewsAPI free)
+- For AI features, integrate Claude API (claude-sonnet-4-6 model)
+- Add disclaimer footer: "This app is for educational purposes only. Not SEBI registered financial advice."
+- All prices in INR (₹) by default
+- Default market: Indian Stock Market (NSE/BSE)
